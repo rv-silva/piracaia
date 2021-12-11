@@ -1,6 +1,6 @@
 # Gemfile
 
-source 'https://rubygems.org'
+source :rubygems
 
-gem 'sinatra', '2.1.0'
-gem 'puma', '5.5.2'
+gem 'sinatra'
+gem 'puma'
