@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sinatra
+  namespace: sinatra
+  labels:
+    app: sinatra
+    tier: web
+    env: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sinatra
+  template:
+    metadata:
+      labels:
+        app: sinatra
+        tier: web
+        env: prod
+    spec:
+      containers:
+        - name: sinatra
+          image: 464651119142.dkr.ecr.us-east-2.amazonaws.com/prod-repo:sinatra-v1.0
+          ports:
+            - containerPort: 9292
