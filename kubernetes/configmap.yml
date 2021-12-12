@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sinatra-config
+  namespace: sinatra
+data:
+  user-name: "Sinatra"

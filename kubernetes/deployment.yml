@@ -24,3 +24,9 @@ spec:
           image: IMAGE_UID_TBC
           ports:
             - containerPort: 9292
+          env:
+            - name: USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: sinatra-config
+                  key: user-name
