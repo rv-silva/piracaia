@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: sinatra
-          image: 464651119142.dkr.ecr.us-east-2.amazonaws.com/prod-repo:sinatra-v1.0
+          image: IMAGE_UID_TBC
           ports:
             - containerPort: 9292
